@@ -120,16 +120,16 @@
                 prediction[i].className + ": " + probability;
             labelContainer.childNodes[i].innerHTML = classPrediction;
 
-            // if (probability > 0.80 && probability < 1.00 ) {
-            //     switch (prediction[i].className) {
-            //         case "Usain Bolt":
-            //             usainBoltAudio.play();
-            //             break;
-            //         case "Squat":
-            //             squattingAudio.play();
-            //         default:
-            //     }
-            // }
+            if (probability > 0.80 && probability < 1.00 ) {
+                switch (prediction[i].className) {
+                    case "Usain Bolt":
+                        usainBoltAudio.play();
+                        break;
+                    case "Squat":
+                        squattingAudio.play();
+                    default:
+                }
+            }
         }
 
         // finally draw the poses
