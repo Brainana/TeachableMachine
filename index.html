@@ -66,6 +66,8 @@
     // the link to your model provided by Teachable Machine export panel
     const URL = "https://teachablemachine.withgoogle.com/models/NaBKz0_4s/";
     let model, webcam, ctx, labelContainer, maxPredictions;
+    
+    const websiteURL = "https://brainana.github.io/TeachableMachine";
 
     let usainBoltAudio, squattingAudio;
 
@@ -96,8 +98,8 @@
             labelContainer.appendChild(document.createElement("div"));
         }
 
-        usainBoltAudio = new Audio("http://localhost:8000/GoodJobOnUsainBoltMove.m4a");
-        squattingAudio = new Audio("http://localhost:8000/GoodJobSquatting.m4a");
+        usainBoltAudio = new Audio(websiteURL + "/GoodJobOnUsainBoltMove.m4a");
+        squattingAudio = new Audio(websiteURL + "/GoodJobSquatting.m4a");
 
     }
     
